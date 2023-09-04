@@ -1,0 +1,159 @@
+*{
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+  object-position: center;
+  border: 4px solid #665e57;
+  padding: 0.5rem;
+  box-shadow: 0px 4px 8px #9193a4;
+}
+body{
+  background: radial-gradient(white 50%, #ded9d9);
+}
+.gallary{
+  margin: auto;
+  max-width: 1000px;
+  padding:1rem;
+}
+
+.text{
+  grid-area: 2/2/5/5;
+  align-self: center;
+    justify-self: center;
+    
+}
+h1{
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  margin: 0.2rem 0;
+  border-top: 2px solid #776b5e;
+  border-bottom: 3px solid #ecd68c;
+  text-align: center;
+}
+.text p{
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+  color:#3f3f3e;
+  letter-spacing: 5px;
+}
+.text span{
+  font-size:2rem;
+  color: red;
+}
+.image1{
+  grid-area: 1/1/3/2;
+}
+.image2{
+  grid-area: 1/2/2/4;
+}
+.image3{
+  grid-area: 1/5/4/6;
+}
+.image4{
+  grid-area: 3/1/6/2;
+}
+.image5{
+  grid-area: 5/3/6/5;
+}
+.image6{
+  grid-area: 4/5/6/7;
+}
+
+
+
+.image7{
+  grid-area: 1/1/3/2;
+}
+.image8{
+  grid-area: 1/2/2/4;
+}
+.image9{
+  grid-area: 1/5/4/6;
+}
+.image10{
+  grid-area: 3/1/6/2;
+}
+.image11{
+  grid-area: 5/3/6/5;
+}
+.image12{
+  grid-area: 4/5/6/7;
+}
+
+
+
+
+
+@media screen and (min-width: 700px){
+  .gallary{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 0.8fr 0.1fr 1fr;
+    grid-template-rows: 24vh 10vh 15vh 10vh 24vh;
+    grid-gap: 1rem;
+}
+
+}
+
+@media screen and (max-width: 701px){
+.image{
+  margin-bottom: 1rem;
+}
+}
+
+.services{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+.contact , .text{
+  text-align: center;
+}
+
+
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 0.5em
+}
+
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+}
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: top
+}
+
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle
+}
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: rgb(0, 0, 0);
+  fill: none
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: rgb(0, 0, 0);
+  stroke: none
+}
